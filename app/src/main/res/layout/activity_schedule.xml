@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".Schedule">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/phno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/edittext_border"
+                android:hint="Phone"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:hint="Address"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_date"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_background"
+                    android:text="Date"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="Schedule Date"
+                    android:padding="10dp"
+                    android:paddingTop="50dp"
+                    android:textColorHint="#ffffff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_time"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30sp"
+                    android:background="@drawable/button_background"
+                    android:text="Time"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/txt_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="Schedule Time"
+                    android:padding="10dp"
+                    android:textColorHint="#ffffff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/schedule"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_background"
+                android:text="Schedule a Pickup"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

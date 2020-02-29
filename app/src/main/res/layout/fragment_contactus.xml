@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="645dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/layout_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="371dp"
+                        android:layout_height="438dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/fullname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:hint="NAME"
+                            android:inputType="textPersonName"
+                            android:padding="20dp"
+                            android:textColorHint="#606060"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:hint="EMAIL"
+                            android:inputType="text"
+                            android:padding="20dp"
+                            android:textColorHint="#606060"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:drawableLeft="@drawable/ic_phone"
+                            android:drawablePadding="10dp"
+                            android:hint="Mobile no"
+                            android:inputType="number"
+                            android:padding="20dp"
+                            android:textColorHint="#606060"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/subject"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:drawableLeft="@drawable/ic_subject"
+                            android:drawablePadding="10dp"
+                            android:hint="Subject"
+                            android:padding="20dp"
+                            android:textColorHint="#606060"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/msg"
+                            android:layout_width="333dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="Enter your message here !"
+                            android:gravity="start|top"
+                            android:inputType="textMultiLine"
+                            android:padding="20dp"
+                            android:textColorHint="#606060"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/button_background"
+                            android:text="Send Message !"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "119472387625",
+    "firebase_url": "https://raddi-connect-b0c22.firebaseio.com",
+    "project_id": "raddi-connect-b0c22",
+    "storage_bucket": "raddi-connect-b0c22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119472387625:android:fe9de72ea97952dae70e38",
+        "android_client_info": {
+          "package_name": "com.example.raddiconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119472387625-ubs476vqafsdnnrsd1phmm92cpdnu6t0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.raddiconnect",
+            "certificate_hash": "2ae59634cf70e9758ed607043626a843a0fb52fe"
+          }
+        },
+        {
+          "client_id": "119472387625-7166ar45q53s8n1obcrttrttrfmhj610.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD83F9AHSQfdVwsMCeFAHnxpLwTEqgrmn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119472387625-7166ar45q53s8n1obcrttrttrfmhj610.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
