@@ -63,11 +63,13 @@ public class Schedule extends AppCompatActivity implements View.OnClickListener 
             @Override
             public void onClick(View v) {
 
+
+
                 Bundle b1 = new Bundle();
                 b1.putString("phone",phone.getText().toString());
-                b1.putString("adrs",addrss.getText().toString());
+                b1.putString("add",addrss.getText().toString());
                 m1.setArguments(b1);
-                t.add(R.id.container_frame_layout,m1);
+
                 t.commit();
 
 

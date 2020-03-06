@@ -19,18 +19,26 @@ public class MyPickupFragment extends Fragment  {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.fragment_my_pickups, container, false);
+
+
+
+
         return  view;
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        t1=(TextView)view.findViewById(R.id.text1);
-        t2=(TextView)view.findViewById(R.id.text2);
-
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
+    {
         Bundle b1 = getArguments();
-        String phone=b1.getString("phone");
-        String address=b1.getString("adrs");
-        t1.setText(phone);
-        t2.setText(address);
+        if(b1!= null)
+        {
+            t1=(TextView)view.findViewById(R.id.text1);
+            t2=(TextView)view.findViewById(R.id.text2);
+
+            Integer phone=b1.getInt("phone");
+            String address=b1.getString("add");
+            t1.setText(phone);
+            t2.setText(address);
+        }
     }
 }
