@@ -12,35 +12,29 @@ import androidx.fragment.app.Fragment;
 
 public class MyPickupFragment extends Fragment  {
 
-    TextView t1,t2;
+    private  TextView t1,t2;
+    public MyPickupFragment() {
+        // Required empty public constructor
+    }
 
 
-    @Nullable
+
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.fragment_my_pickups, container, false);
 
-        t1=(TextView)view.findViewById(R.id.text1);
-        t2=(TextView)view.findViewById(R.id.text2);
-
-        Bundle b1 = getArguments();
-        if(b1!= null)
+        if (getArguments()!=null)
         {
+        t1=(TextView)view.findViewById(R.id.phoneid);
+        t2=(TextView)view.findViewById(R.id.addressid);
+        String phone=this.getArguments().getString("phone").toString();
+        String address=this.getArguments().getString("add").toString();
+        t1.setText("NAME : "+phone);
+        t2.setText("NAME : "+address);
 
-
-            Integer phone=b1.getInt("phone");
-            String address=b1.getString("add");
-            t1.setText(phone);
-            t2.setText(address);
         }
-
         return  view;
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
-    {
-
-    }
 }

@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
-    android:padding="40dp"
     tools:context=".Schedule">
 
 
@@ -20,29 +19,59 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/phno"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="100dp"
-                android:background="@drawable/edittext_border"
-                android:hint="Phone"
-                android:inputType="number"
-                android:padding="10dp"
-                android:textColorHint="#ffffff"
-                android:textSize="20sp" />
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/address"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phno"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="Phone no. "
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColorHint="#ffffff"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/edittext_border"
-                android:hint="Address"
-                android:inputType="textMultiLine"
-                android:padding="10dp"
-                android:textColorHint="#ffffff"
-                android:textSize="20sp" />
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="Address"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textColorHint="#ffffff"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="City"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textColorHint="#ffffff"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"

@@ -29,7 +29,8 @@
                     android:textAlignment="center"
                     android:textColor="#ffff"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
             </androidx.appcompat.widget.Toolbar>
 
             <LinearLayout

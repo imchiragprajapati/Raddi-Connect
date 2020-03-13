@@ -68,8 +68,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 startActivity(i);
                 break;
             case R.id.thirdcard:
-                i = new Intent(getActivity(), Trust.class);
-                startActivity(i);
+                openDialogs();
+                break;
+            case R.id.forthcard:
+                openDialog();
+                break;
+            case R.id.fifthcard:
+                frag();
                 break;
             case R.id.sixthcard:
                 i = new Intent(getActivity(), Opportunities.class);
@@ -79,13 +84,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 i = new Intent(getActivity(), Impact.class);
                 startActivity(i);
                 break;
-            case R.id.fifthcard:
-                frag();
-                break;
-            case R.id.forthcard:
-                openDialog();
-                break;
-
             default:
                 break;
         }
@@ -107,5 +105,14 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     public void openDialog() {
         Convenience_Dialog convenience_dialog = new Convenience_Dialog();
         convenience_dialog.show(getFragmentManager(), "convenience");
+
+
     }
+
+    public void openDialogs() {
+        Trust_Dialog trust_dialog = new Trust_Dialog();
+        trust_dialog.show(getFragmentManager(), "trust");
+    }
+
+
 }
