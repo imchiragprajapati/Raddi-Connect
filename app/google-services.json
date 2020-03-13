@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "119472387625-4ubqpo49n8fu3jt1u2oduj31d2u1400t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.raddiconnect",
+            "certificate_hash": "31e060aed794e2c4846f2e844ac3f01d361f9629"
+          }
+        },
+        {
           "client_id": "119472387625-ubs476vqafsdnnrsd1phmm92cpdnu6t0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
